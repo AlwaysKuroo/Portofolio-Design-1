@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: none;
+}
+
+/* Hide default cursor when custom cursor is active */
+a,
+button,
+input,
+textarea,
+select {
+  cursor: none;
+}
+
+/* For mobile devices where custom cursor doesn't work */
+@media (max-width: 768px) {
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: auto;
+  }
+}
